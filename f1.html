@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Season</title>
+</head>
+<body>
+    <style>
+        body {
+          background-image: url('sea.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+        </style>
+        <style>
+            .content {
+              max-width: 500px;
+              margin: auto;
+            }
+            .p1 {
+                font-family: Brush Script MT,cursive;
+                    }
+            .p2 {
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    }
+            .move-up {
+                 margin-top: -100px;
+            }
+            input.larger { 
+			    width: 40px; 
+			    height: 40px; 
+		    } 
+            .h1{
+                color:black;
+                text-shadow:1px 1px 2px black, 0 0 25px white, 0 0 5px white;
+            }
+        </style>
+        <p style="text-align: center; font-size:100px;" class="h1" class="p2"> SEASON</p>
+        <form id="checkboxForm">
+            <label>
+                <p style="text-align: center; font-size:50px;padding-top:-500px;" class="p1"><input type="radio" name="group" id="checkbox1" class="larger">Summer 
+
+            </label>
+            <br>
+            <label>
+                <p style="text-align: center; font-size:50px;padding-top:-500px;" class="p1"><input type="radio" name="group" id="checkbox2" class="larger" class="move-up"> Winter
+            </label>
+            <br>
+            <label>
+                <p style="text-align: center; font-size:50px;padding-top:-500px;" class="p1"><input type="radio" name="group" id="checkbox3" class="larger"> Monsoon
+            </label>
+            <br>
+            <button type="button" onclick="redirectBasedOnCheckbox()">Submit</button>
+        </form>
+    
+        <script>
+            function redirectBasedOnCheckbox() {
+                
+                var checkbox1 = document.getElementById('checkbox1');
+                var checkbox2 = document.getElementById('checkbox2');
+                var checkbox3 = document.getElementById('checkbox3');
+                if (checkbox1.checked) {
+                    window.location.href = 'http://127.0.0.1:5500/summer.html';
+                } else if (checkbox2.checked) {
+                    window.location.href = 'http://127.0.0.1:5500/winter.html';
+                } else if (checkbox3.checked) {
+                    window.location.href = 'http://127.0.0.1:5500/monsoon.html';
+                } else {
+                    alert('Please select at least one checkbox to proceed.');
+                }
+            }
+        </script>
+</body>
+</html>

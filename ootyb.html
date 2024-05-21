@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Explorer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: left;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 1em;
+            margin: 0 1em;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .search-bar {
+            margin: 1em 0;
+        }
+
+        .search-results {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .result {
+            width: 30%;
+            margin: 1em;
+            padding: 1em;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><u>BUDGET</u></h1>
+        <p>Plan your vacation...</p>
+    </header>
+
+    
+
+    <section>
+        <h2>Search for Your Adventure Ends Here!!</h2>
+
+        
+
+        <div class="search-results">
+            <!-- Your search results go here -->
+            <div class="result">
+                <h3>Flight to Destination</h3>
+                    <ul>
+                        <li>Air jet-4,000</li>
+                        <li>Indigo-9000</li>
+                        <li>Air India-12000</li>
+
+                    </ul>
+        
+                
+            </div>
+
+            <div class="result">
+                <h3>Hotel Stay-Budget</h3>
+                <ul>
+                    <li>Aakash rooms and cottages - 1,339 </li>
+                    <li>Beverly villa - 2,700</li>
+                    <li>Paradise Perfect - 3,703</li>
+                    <li>Treebo Trend-4,665</li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </section>
+    <form id="myForm" onsubmit="return validateForm()" action="http://127.0.0.1:5500/feedback.html">
+        <input class="center" type="submit" value="Feedback">
+      </form>
+      <script>
+          function validateForm() {
+              
+              return false;
+            }
+            return true;
+      </script>
+</body>
+</html>
